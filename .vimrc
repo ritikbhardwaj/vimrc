@@ -1,22 +1,31 @@
+" ================================================================
 " My .vimrc configuration
 " Author - Ritik Bhardwaj
-" Last Updated - 29/01/2022 
-" Install Vim Plug plugin manager - "curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-"   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+" Date added - 29/01/2022 
+" ================================================================
 
 set nocompatible
 set number
 syntax on
-set hlsearch
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
 set autoindent
 set relativenumber
-" set mouse=a set scrolloff=8
 
+" ================================================================
+" Search settings
+" ================================================================
+
+set hlsearch " Search as we type.
+set incsearch " Incremental search. 
+" This unsets the 'last search pattern' register by hitting ;
+nnoremap ; :noh<CR>:<backspace>
+
+" ================================================================
 "Key Mappings
+" ================================================================
 
 " Map Esc to jj
 imap jj <Esc>
@@ -29,11 +38,18 @@ set hidden
 nnoremap <S-k> :bnext<CR>
 nnoremap <S-j> :bprev<CR>
 
+" ================================================================
+" Colors and themes
+" ================================================================
+
 " color for vim airline
 set t_Co=256
 let g:airline_theme='simple'
 
+" ================================================================
 " Plugins 
+" ================================================================
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'ap/vim-buftabline'
