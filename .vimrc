@@ -52,10 +52,13 @@ let g:airline_theme='simple'
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'ap/vim-buftabline'
+" vim-buftabline : show buffers as tabs
+Plug 'ap/vim-buftabline'           
+" vim-airline-themes : themes for vim airline
 Plug 'vim-airline/vim-airline-themes'
-Plug 'pangloss/vim-javascript'
+" nerdtree : see the directory within vim  
 Plug 'scrooloose/nerdtree'
+" vim-airline : information strip at the bottom
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
