@@ -1,7 +1,7 @@
 " ================================================================
 " My .vimrc configuration
 " Author - Ritik Bhardwaj
-" Date added - 29/01/2022 
+" Date added - 29/01/2022
 " ================================================================
 
 set nocompatible
@@ -19,7 +19,7 @@ set relativenumber
 " ================================================================
 
 set hlsearch " Search as we type.
-set incsearch " Incremental search. 
+set incsearch " Incremental search.
 " This unsets the 'last search pattern' register by hitting ;
 nnoremap ; :noh<CR>:<backspace>
 
@@ -47,16 +47,16 @@ set t_Co=256
 let g:airline_theme='simple'
 
 " ================================================================
-" Plugins 
+" Plugins
 " ================================================================
 
 call plug#begin('~/.vim/plugged')
 
 " vim-buftabline : show buffers as tabs
-Plug 'ap/vim-buftabline'           
+Plug 'ap/vim-buftabline'
 " vim-airline-themes : themes for vim airline
 Plug 'vim-airline/vim-airline-themes'
-" nerdtree : see the directory within vim  
+" nerdtree : see the directory within vim
 Plug 'scrooloose/nerdtree'
 " vim-airline : information strip at the bottom
 Plug 'vim-airline/vim-airline'
